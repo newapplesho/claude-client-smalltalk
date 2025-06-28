@@ -24,3 +24,23 @@ Metacello new
 | Name                                 | Smalltalk Version | Version        |
 | ------------------------------------ | ----------------- | -------------- |
 | [Pharo Smalltalk](http://pharo.org/) | 13.0              | Latest Version |
+
+## Quickstart
+
+```smalltalk
+ClaudeConfig default.
+ClaudeConfig default apiKey: 'your-api-key'.
+client := ClaudeAPIClient new.
+conversation := ClaudeConversation new.
+conversation addUser: 'What is the capital of Japan?'.
+request := ClaudeMessageRequest new.
+request model: 'claude-sonnet-4-20250514'.
+request maxTokens: 1024.
+request messages: conversation.
+response := client sendRequest: request.
+conversation addAssistant: response text.
+Transcript show: response text.
+conversation addUser: 'Do you like Tokyo?'.
+response := client sendRequest: request.
+Transcript show: response text.
+```
