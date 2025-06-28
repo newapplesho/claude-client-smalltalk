@@ -1,0 +1,19 @@
+SmalltalkCISpec {
+  #loading : [
+    SCIMetacelloLoadSpec {
+      #baseline : 'ClaudeClient',
+      #directory : 'src',
+      #load : [ 'default' ],
+      #platforms : [ #pharo ]
+    }
+  ],
+  #testing : {
+    #coverage : {
+      #packages : [ 'Claude*' ]
+    },
+    #include : {
+      #packages : [ 'Claude*' ]
+    },
+    #packages : [ 'Claude-*' ]
+  }
+}
