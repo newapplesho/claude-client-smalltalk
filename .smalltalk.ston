@@ -1,7 +1,7 @@
 SmalltalkCISpec {
   #loading : [
     SCIMetacelloLoadSpec {
-      #baseline : 'ClaudeClient',
+      #baseline : 'Claude',
       #directory : 'src',
       #load : [ 'default' ],
       #platforms : [ #pharo ]
