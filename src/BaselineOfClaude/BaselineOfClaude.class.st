@@ -1,6 +1,6 @@
 Class {
 	#name : 'BaselineOfClaude',
-	#superclass : 'Object',
+	#superclass : 'BaselineOf',
 	#category : 'BaselineOfClaude',
 	#package : 'BaselineOfClaude'
 }
