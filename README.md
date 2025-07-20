@@ -1,4 +1,4 @@
-# claude-client-smalltalk
+# claude-client-smalltalk [![ci](https://github.com/newapplesho/claude-client-smalltalk/actions/workflows/ci.yml/badge.svg)](https://github.com/newapplesho/claude-client-smalltalk/actions/workflows/ci.yml)
 
 ## ⚠️ Important Disclaimer
 
