@@ -16,7 +16,7 @@ BaselineOfClaude >> baseline: spec [
 				package: 'Claude-Core'
 				with: [ spec requires: #( 'NeoJSON' ) ].
 			spec
-				package: 'Claude-Tests'
+				package: 'Claude-Core-Tests'
 				with: [ spec requires: #( 'Claude-Core' ) ].
 
 			spec
