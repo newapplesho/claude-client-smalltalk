@@ -18,7 +18,7 @@ BaselineOfClaude >> baseline: spec [
 
 			spec
 				group: 'Core' with: #( 'Claude-Core' );
-				group: 'Tests' with: #( 'Claude-Core' 'Claude-Tests');
+				group: 'Tests' with: #( 'Claude-Core' 'Claude-Core-Tests');
 				group: 'default' with: #( 'Core' 'Tests' ) ]
 ]
 
