@@ -5,7 +5,7 @@ Class {
 	#package : 'BaselineOfClaude'
 }
 
-{ #category : 'baseline' }
+{ #category : 'baselines' }
 BaselineOfClaude >> baseline: spec [
 
 	<baseline>
@@ -15,14 +15,17 @@ BaselineOfClaude >> baseline: spec [
 			spec
 				package: 'Claude-Core'
 				with: [ spec requires: #( 'NeoJSON' ) ].
+			spec
+				package: 'Claude-Core-Tests'
+				with: [ spec requires: #( 'Claude-Core' ) ].
 
 			spec
 				group: 'Core' with: #( 'Claude-Core' );
-				group: 'Tests' with: #( 'Claude-Core' );
+				group: 'Tests' with: #( 'Claude-Core' 'Claude-Core-Tests');
 				group: 'default' with: #( 'Core' 'Tests' ) ]
 ]
 
-{ #category : 'baseline' }
+{ #category : 'baselines' }
 BaselineOfClaude >> defineDependencies: spec [
 
 	spec
