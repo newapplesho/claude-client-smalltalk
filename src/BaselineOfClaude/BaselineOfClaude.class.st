@@ -5,7 +5,7 @@ Class {
 	#package : 'BaselineOfClaude'
 }
 
-{ #category : 'baseline' }
+{ #category : 'baselines' }
 BaselineOfClaude >> baseline: spec [
 
 	<baseline>
@@ -18,11 +18,11 @@ BaselineOfClaude >> baseline: spec [
 
 			spec
 				group: 'Core' with: #( 'Claude-Core' );
-				group: 'Tests' with: #( 'Claude-Core' );
+				group: 'Tests' with: #( 'Claude-Core' 'Claude-Tests');
 				group: 'default' with: #( 'Core' 'Tests' ) ]
 ]
 
-{ #category : 'baseline' }
+{ #category : 'baselines' }
 BaselineOfClaude >> defineDependencies: spec [
 
 	spec
